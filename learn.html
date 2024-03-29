@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table with Image Alignment</title>
+<style>
+  table {
+      width: 1000px;
+      border-collapse: collapse;
+      border: 2px double #ddd; /* Double line border for the table */
+  }
+  th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+  }
+  img {
+      float: right;
+  }
+</style>
 </head>
 <body>
-    
-<h2>Learning the image map</h2>
 
-
-<img src="try.jpg" alt="nice image" usemap="#niceImage" width="620" height="500">
-
-
-<map name="niceImage">
-    <area shape="rect" coords="35,50,580,450" alt="FlowerVas" href="flowerVas.html">
-    
-  </map>
-
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">
+        <!-- Details and Image in the same cell -->
+        <!-- Details on the left -->
+        <p style="float: left;">Left side details go here.ChatGPT is an advanced language model developed by OpenAI, <br>
+          based on the GPT (Generative Pre-trained Transformer) architecture. It is designed to generate human-like text and engage<br>
+           in conversation on a wide range of topics. ChatGPT leverages large-scale datasets to understand and respond to user<br>
+            input, providing coherent and contextually relevant answers. Its capabilities span from answering questions and providing <br>
+            information to engaging in creative storytelling and offering personalized assistance. With its ability to understand and <br>
+            generate text in multiple languages and its knack for adapting to various conversational styles, ChatGPT serves as a versatile <br>
+            tool for communication, education, and entertainment</p>
+        <!-- Image aligned to the right -->
+        <img src="download.png" alt="Your Image" width="100" height="100">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 </body>
 </html>
