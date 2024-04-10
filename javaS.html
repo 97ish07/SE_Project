@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Script</title>
-
-
-    <script src="first.js"></script>
-
+    <title>Sum Calculator</title>
 </head>
-
-
 <body>
-
-    <h1 id = "ish">Ishara Wanninayake</h1>
-
-    <button type="button" onclick="jsFunction()">See the Disignation</button>
+    <h2>Sum Calculator</h2>
+    <label for="num1">Enter number 1:</label>
+    <input type="number" id="num1"><br><br>
     
+    <label for="num2">Enter number 2:</label>
+    <input type="number" id="num2"><br><br>
 
-    
+    <button onclick="calculateSum()">Calculate Sum</button><br><br>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateSum() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").innerText = "Sum: " + sum;
+        }
+    </script>
 </body>
 </html>
